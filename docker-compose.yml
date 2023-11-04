@@ -1,0 +1,8 @@
+version: "3.0"
+services:
+  yt-dl:
+    image: nhuin/yt-dlp-server
+    restart: alwys
+    ports:
+      - "5000:5000"
+
