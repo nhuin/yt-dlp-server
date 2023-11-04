@@ -12,5 +12,5 @@ def execute_binary():
     return "Error executing yt-dlp"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
