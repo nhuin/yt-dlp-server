@@ -1,8 +1,12 @@
 version: "3.0"
 services:
   yt-dl:
+    build:
+      context: .
     image: nhuin/yt-dlp-server
     restart: always
     ports:
       - "5000:5000"
+    volumes:
+      - /mnt/e/Téléchargements/yt-dl/:/dl
 
